@@ -1,0 +1,1 @@
+# astraregul_stand
