@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Astra.Net.Agent Name="ARM1" ParentAgentPort="1113" NetEnterPort="1010">
+  <ChildAgents />
+</Astra.Net.Agent>

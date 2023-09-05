@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Id="48bd555e-5931-4a66-9b97-a1720426dcaa" Version="1.0.0.0" UpgradeVersion="5">
+  <Files>
+    <AddressFile Name="Commutator1_SnmpMap.xml" />
+    <AddressFile Name="Commutator2_SnmpMap.xml" />
+    <AddressFile Name="ARM1_SnmpMap.xml" />
+    <AddressFile Name="STATION_SnmpMap.xml" />
+    <AddressFile Name="Server1_SnmpMap.xml" />
+    <AddressFile Name="Server2_SnmpMap.xml" />
+    <AddressFile Name="REGUL_R500_71_W_Map.xml" />
+    <AddressFile Name="REGUL_R500_71_W_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_R500_71_W_B_DiagnMap.xml" />
+    <SourceFile Name="AstraRegul_stand.omx" />
+  </Files>
+</Project>

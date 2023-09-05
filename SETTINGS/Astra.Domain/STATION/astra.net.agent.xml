@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Astra.Net.Agent Name="AstraRegul" NetEnterPort="1010" ParentAgentPort="1020">
+  <ChildAgents>
+    <ChildAgent Name="Server1" Address="192.168.100.200" Port="1111" />
+    <ChildAgent Name="Server2" Address="192.168.100.201" Port="1112" />
+    <ChildAgent Name="ARM1" Address="192.168.100.110" Port="1113" />
+  </ChildAgents>
+  <Options LoggerLever="2" />
+</Astra.Net.Agent>

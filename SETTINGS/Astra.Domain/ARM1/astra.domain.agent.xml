@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Astra.Domain.Agent Name="NDA">
+  <EntryPointAstraNetAgent Name="ARM1" Port="1010" />
+  <InstalledComponents>
+    <Astra.Server Name="InstalledAccessPoint" ServiceName="astra-accesspoint.service" />
+  </InstalledComponents>
+  <Workstation Dynamic="false">
+    <WorkstationRoles>
+      <WorkstationRole Name="THIN_CLIENT">
+        <Components StoragePath="/usr/local/DomainStorage/cache/server">
+          <Component InstalledName="InstalledAccessPoint" Name="AccessPoint" />
+        </Components>
+      </WorkstationRole>
+    </WorkstationRoles>
+  </Workstation>
+</Astra.Domain.Agent>

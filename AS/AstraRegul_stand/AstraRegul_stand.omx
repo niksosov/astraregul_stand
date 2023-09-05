@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx name="astraregul_stand" uuid="322e786e-d5b6-49e8-bd49-12f300dc35c2" xmlns="system" xmlns:a="automation" xmlns:ct="automation.control" xmlns:dp="automation.deployment" xmlns:eth="automation.ethernet" xmlns:modbus="automation.modbus" xmlns:opc="automation.opc" xmlns:r="automation.reference" xmlns:srv="server" xmlns:regul="prosoft.regul" xmlns:snmp="automation.snmp" migration="27">
+  <link-unit name="System" uuid="a2e4cf79-3494-449a-83aa-071f9e04f159" target="Om.System" />
+  <link-unit name="Server" uuid="7f3e33ea-549e-4de7-bee2-1f41a69dcef8" target="Om.Server" />
+  <link-unit name="PLC" uuid="5809dc29-0488-4192-a922-632b586a5d66" target="Om.PLC" />
+  <dp:domain name="AstraRegul" uuid="a353417e-90da-4a52-9a9a-829a0d0bc0b4" address="AstraRegul">
+    <dp:domain-node name="STATION" uuid="9d3a3416-0dea-43c9-9569-03a9fe98d6fc" address="">
+      <attribute type="unit.System.Attributes.Comment" value="Engineer station" />
+      <srv:io-server name="AstraServer" uuid="8a9b21fe-0d4c-4db8-98e9-341b5db1ed68">
+        <srv:opcda-server name="DaServer" uuid="8f98224f-9de8-49bc-a069-2768aae037b0" class-id="AP.OPCDAServer" />
+        <srv:tcp-server name="TcpServer" uuid="c6c9ae52-43e0-445c-80cf-4ff80aed95bd" history-port="4950" />
+        <srv:opcaeserver-module name="AeServer" uuid="5a5e00c4-c70d-4716-b2bb-f8e465fda602" />
+        <srv:opcua-module name="UaServer" uuid="f75b30e6-dfe8-4f69-94a3-1e61aa0d134a" />
+        <srv:hda-server name="HdaServer" uuid="2296bce6-698b-43d4-9375-6710102f04f1" />
+        <srv:snmp-manager name="SNMP Manager" uuid="8c00789d-e2c8-411f-9b59-1037357a0118">
+          <srv:agent-config agent="SNMP.SnmpAgent" />
+          <srv:agent-config agent="Commutator1.SNMP.SnmpAgent" />
+          <srv:agent-config agent="Commutator2.SNMP.SnmpAgent" />
+          <srv:agent-config agent="Server1.SNMP.SnmpAgent" />
+          <srv:agent-config agent="Server2.SNMP.SnmpAgent" />
+        </srv:snmp-manager>
+        <dp:host module="IOS_App" />
+        <srv:opcua-client name="OpcUaClient" uuid="b02335b4-17bd-4da0-b730-7ea2765b33c8" application-mame="ProSystOpcUaClient" logging-required="false">
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_R500_71_W_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+        </srv:opcua-client>
+        <srv:history-module name="HistoryModule" uuid="5bae6e49-084a-405f-b504-6ed522bdd040">
+          <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_HISTORY" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
+          <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_EVENTS" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
+          <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_IMIT" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
+        </srv:history-module>
+      </srv:io-server>
+      <srv:historian name="Historian" uuid="78c99ef7-2c3b-42b6-913f-a865b58829fc" instance="tcp:4949">
+        <srv:historian-database name="DB_HISTORY" uuid="36243e3a-8691-44a1-bb02-310974b494df" usage="values" alias="DB_HISTORY" />
+        <srv:historian-database name="DB_EVENTS" uuid="c0bbd318-bebf-4fcd-ab8a-2c8fdaa9207a" usage="events" alias="DB_EVENTS" />
+        <srv:historian-database name="DB_IMIT" uuid="a2438586-a4e0-4032-b187-f69048506768" usage="imitation" alias="DB_IMIT" />
+      </srv:historian>
+      <dp:external-runtime name="SNMP" uuid="acb3f062-d587-4c08-a70d-da6708f80751">
+        <dp:application-object name="STATION_SnmpApp" uuid="a5639926-bd17-41ce-b370-b79beb5bc725">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="3c6c7a6b-748b-410a-9f45-f326582d5005" file="STATION_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="31f6cf58-d858-4487-926d-4eda064d6abb" address-map="STATION_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="35f2b02f-480e-43eb-b5e4-c3bdae6175cc" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="96c95f52-05d8-41f7-a198-11d4212e7828" network="Network1" address="192.168.100.100" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="dc804327-e1e4-4ce2-afe2-98becfef1d26" network="Network2" address="192.168.101.100" />
+    </dp:domain-node>
+    <dp:application-object name="IOS_App" uuid="bc297d2e-24ed-46a0-b0f9-7dbe9c5516e4" />
+    <dp:workstation name="THIN_CLIENT" uuid="2c62b4b3-7442-459c-9b77-4932836f4198">
+      <srv:access-point name="AccessPoint" uuid="696a0894-b8ac-4d9e-86e1-9a73f13f18cd">
+        <srv:hub-module name="HubModule" uuid="7d536ea8-1dd9-4b00-b75e-f7e05b9095fb">
+          <srv:hub-module-source-config runtime="Server1.AstraServer" />
+        </srv:hub-module>
+        <srv:history-module name="HistoryModule" uuid="9f9105ef-4bb8-4b90-bbc0-518562cbc3b2" />
+        <dp:application-object name="THIN_CLIENT_App" uuid="bd0ecc27-2794-41fa-8db0-0691cf5c706a" />
+        <srv:tcp-server name="TcpServer" uuid="719d86dc-20f0-4a32-a1ed-9819d57aded9" history-port="4950" />
+        <srv:opcda-server name="DaServer" uuid="7661227d-7a91-4342-a94b-24bfa5505f6e" class-id="AP.OPCDAServer" />
+        <srv:opcaeserver-module name="AeServer" uuid="352b72a5-6210-455e-96bb-09d2e24489a7" />
+        <srv:hda-server name="HdaServer" uuid="8c2b56f7-e6bf-43ef-9a71-18437112eb51" />
+        <srv:opcua-module name="OpcUaServer" uuid="39a6ea38-35b3-4d81-9942-d79ab4921ff1" />
+      </srv:access-point>
+      <eth:abstract-ethernet-adapter name="EthernetAdapter1" uuid="0c3be374-4f5e-483d-a5f2-2ee5950ebdd0" network="LocalNetwork" />
+      <eth:abstract-ethernet-adapter name="EthernetAdapter2" uuid="9367bffc-dab3-4d59-86eb-8a1616ff2232" network="Network1" />
+      <eth:abstract-ethernet-adapter name="EthernetAdapter3" uuid="45fcad55-d14e-468d-8cc1-638933c5c494" network="Network2" />
+    </dp:workstation>
+    <dp:computer name="REGUL_R500_71_W_A" uuid="e3cbe8ef-c65c-4496-969d-5f6d5db93575">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_R500_71_W" />
+      <dp:external-runtime name="Runtime" uuid="84eeb3b0-8875-4438-8474-70822b8444be">
+        <dp:application-object name="REGUL_R500_71_W_App" uuid="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="5bb4ac8c-d667-41f7-8dad-0d9ef74442eb" file="REGUL_R500_71_W_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" tag-map="REGUL_R500_71_W_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="48a42c65-8380-420f-8564-7aa82f1da2b9">
+        <dp:application-object name="REGUL_R500_71_W_A_DiagnApp" uuid="0a990b55-5f75-4e1f-b57d-e2adeea97762">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="ee821b52-7152-43c0-a3b8-868626af0366" file="REGUL_R500_71_W_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="fd158e2c-6dc8-4201-9faf-e558a526ec32" tag-map="REGUL_R500_71_W_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="b8ae9650-a084-4fb1-8ee2-9d7c5c5244d7" network="Network1" address="192.168.100.10" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="e572abf7-a596-4c18-bc75-807edd0a9c42" network="Network2" address="192.168.101.10" />
+    </dp:computer>
+    <dp:computer name="REGUL_R500_71_W_B" uuid="f9b8bb34-4a6b-43df-a8c0-53a9cadaa93d">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_R500_71_W" />
+      <dp:external-redundant-runtime name="Runtime" uuid="50e75d02-dcb8-4b18-a9c8-01c7de407a8d" runtime="REGUL_R500_71_W_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="9f855c2a-a512-4285-b352-0dae78df023b">
+        <dp:application-object name="REGUL_R500_71_W_B_DiagnApp" uuid="b01fabcb-7fef-4ced-a011-bad4a46f9557">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="f37c8ae0-3a96-4374-b45a-1fb4f7c507e8" file="REGUL_R500_71_W_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="6d2a9414-be26-44f5-9c3a-cd7e40fb7cc8" tag-map="REGUL_R500_71_W_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="8adfe462-fc3d-4583-8373-8317ccee70d6" network="Network1" address="192.168.100.11" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="7f4b2042-6bfc-48dc-9d45-97e95dfcbaac" network="Network2" address="192.168.101.11" />
+    </dp:computer>
+    <eth:ethernet-net name="LocalNetwork">
+      <attribute type="unit.System.Attributes.Comment" value="Local network" />
+    </eth:ethernet-net>
+    <eth:ethernet-net name="Network1">
+      <attribute type="unit.System.Attributes.Comment" value="External network 1" />
+    </eth:ethernet-net>
+    <eth:ethernet-net name="Network2">
+      <attribute type="unit.System.Attributes.Comment" value="External network 2" />
+    </eth:ethernet-net>
+    <dp:computer name="Commutator1" uuid="45686d34-8cea-4cb0-a086-857a1de6b639">
+      <attribute type="unit.System.Attributes.Comment" value="Main commutator" />
+      <dp:external-runtime name="SNMP" uuid="37180268-ca45-46e9-955b-0f514972c1ff">
+        <dp:application-object name="Commutator1_SnmpApp" uuid="ac9b2e1e-a481-483d-b291-0214e7042eb3">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="448c667f-5fd5-4a17-a8dd-dcb635d52517" file="Commutator1_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="688560a9-cd80-4a22-99a9-44834aa2e605" address-map="Commutator1_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="dff38963-35fd-48ae-9296-0488fcf33b77" network="Network1" address="192.168.100.250" />
+    </dp:computer>
+    <dp:computer name="Commutator2" uuid="14446737-25f2-4873-b52f-a18db417186d">
+      <attribute type="unit.System.Attributes.Comment" value="Redundancy commutator" />
+      <dp:external-runtime name="SNMP" uuid="2c0b0271-985a-46fe-8377-7c2505e3cd60">
+        <dp:application-object name="Commutator2_SnmpApp" uuid="a043c7c7-cfaf-4e84-90b5-2df4deb1ba69">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="a5e295c6-3b53-48a4-8441-ccf79bb3ca28" file="Commutator2_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="3ea67a35-c70f-49fa-9e1c-514b9f3e12e0" address-map="Commutator2_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="3a356061-2b21-4c01-890d-8560de8e77ce" network="Network2" address="192.168.101.250" />
+    </dp:computer>
+    <dp:domain-node name="Server1" uuid="3a484811-ee25-4b9a-86a6-8dfbcbb0dd31" address="Server1">
+      <attribute type="unit.System.Attributes.Comment" value="Main server" />
+      <srv:io-server name="AstraServer" uuid="ac4d688e-ebfe-46fa-8534-a84503a5be48">
+        <srv:tcp-server name="TcpServer" uuid="779d402c-8c0c-4e75-a3d2-dd578653a185" history-port="4950" />
+        <srv:opcaeserver-module name="AeServer" uuid="ecfe9b86-ac56-458c-8a2f-89d617fb9c76" />
+        <srv:opcua-module name="UaServer" uuid="5537a3fc-5064-423c-92c6-6b34832ffdaf" />
+        <srv:snmp-manager name="SNMP Manager" uuid="d4f4ae11-ad56-4ffa-a4a6-94377ea62f1a">
+          <srv:agent-config agent="STATION.SNMP.SnmpAgent" />
+          <srv:agent-config agent="Commutator1.SNMP.SnmpAgent" />
+          <srv:agent-config agent="Commutator2.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SNMP.SnmpAgent" />
+          <srv:agent-config agent="Server2.SNMP.SnmpAgent" />
+        </srv:snmp-manager>
+        <dp:host module="IOS_App" />
+        <srv:opcua-client name="OpcUaClient" uuid="f8b419ec-a2f0-411e-bc65-024903363c95" application-mame="ProSystOpcUaClient" logging-required="false">
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_R500_71_W_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+        </srv:opcua-client>
+        <srv:history-module name="HistoryModule" uuid="f1f72197-3555-4f3c-9206-66edb9d0d926">
+          <srv:historian-database-link database="AstraRegul.Server1.Historian.DB_HISTORY" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
+          <srv:historian-database-link database="AstraRegul.Server1.Historian.DB_EVENTS" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
+          <srv:historian-database-link database="AstraRegul.Server1.Historian.DB_IMIT" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
+          <srv:historian-database-link database="AstraRegul.Server2.Historian.DB_HISTORY" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
+          <srv:historian-database-link database="AstraRegul.Server2.Historian.DB_EVENTS" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
+          <srv:historian-database-link database="AstraRegul.Server2.Historian.DB_IMIT" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
+        </srv:history-module>
+      </srv:io-server>
+      <srv:historian name="Historian" uuid="e5587517-afb2-47bf-87b0-abb67043a267" instance="tcp:4949">
+        <srv:historian-database name="DB_HISTORY" uuid="c4ab6704-ad9d-41f2-b157-b33c9787601d" usage="values" alias="DB_HISTORY" />
+        <srv:historian-database name="DB_EVENTS" uuid="ce69a82b-a714-42ea-8308-b8d71236e6a1" usage="events" alias="DB_EVENTS" />
+        <srv:historian-database name="DB_IMIT" uuid="5ecb333f-2bdc-4a5b-a22b-fd47a2ad10fc" usage="imitation" alias="DB_IMIT" />
+      </srv:historian>
+      <dp:external-runtime name="SNMP" uuid="d4627e25-a688-4c30-9517-06884bd8c384">
+        <dp:application-object name="Server1_SnmpApp" uuid="7b70d90b-e127-4768-ac40-66293c2f528f">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="2a7db272-c535-4950-be71-e3929ba02863" file="Server1_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="51449b79-6973-4c58-a6da-2ba822a0dc48" address-map="Server1_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="b2fe6162-d916-4e87-8a5c-3d2e1f260845" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="f25f6efc-aec6-4ed8-a2e9-74232510a3c8" network="Network1" address="192.168.100.200" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="4bac7536-c1a0-48ff-876f-90d58510c036" network="Network2" address="192.168.101.200" />
+    </dp:domain-node>
+    <dp:domain-node name="Server2" uuid="6a39d4a7-b7ae-4d92-9997-08b6831f1ba5" address="Server2">
+      <attribute type="unit.System.Attributes.Comment" value="Redundancy server" />
+      <srv:redundant-server name="AstraServer" uuid="2a13d06b-3026-4339-a5cd-c80b8dada162" server="Server1.AstraServer" primary-adapter="EthernetAdapter1" reserve-adapter="EthernetAdapter2" server-primary-adapter="Server1.EthernetAdapter1" server-reserve-adapter="Server1.EthernetAdapter2" />
+      <srv:historian name="Historian" uuid="c793f905-05d6-4997-87bb-47a87b6e08cb" instance="tcp:4949">
+        <srv:historian-database name="DB_HISTORY" uuid="dfd63697-7b05-4be0-baec-5a5331c187e6" usage="values" alias="DB_HISTORY" />
+        <srv:historian-database name="DB_EVENTS" uuid="021ab695-c4e2-406d-829b-168cc6665540" usage="events" alias="DB_EVENTS" />
+        <srv:historian-database name="DB_IMIT" uuid="8020d055-549a-4bb0-b40c-186983521531" usage="imitation" alias="DB_IMIT" />
+      </srv:historian>
+      <dp:external-runtime name="SNMP" uuid="248fc4ec-51e6-4651-b626-5f5b3bbfec98">
+        <dp:application-object name="Server2_SnmpApp" uuid="e1ece834-a5aa-4e2d-80f3-a6cb232ea3bd">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="95dbf1da-1946-4f7b-8052-d4f09c614324" file="Server2_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="0d7fc6e7-2c00-489b-b147-04b7ba983edd" address-map="Server2_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="2554e922-d1a4-4a9b-9599-48a6818de837" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="5fd1cdab-f3b1-41cb-8493-f714ad40584f" network="Network1" address="192.168.100.201" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="8ef2d888-9f72-4c78-89de-779c80c0903d" network="Network2" address="192.168.101.201" />
+    </dp:domain-node>
+    <dp:computer name="ARM1" uuid="2057bee5-ed1d-4e68-9f73-240999282083">
+      <attribute type="unit.System.Attributes.Comment" value="Workstation #1" />
+      <dp:external-runtime name="SNMP" uuid="8cf575c7-585a-497c-a293-dc296d655726">
+        <dp:application-object name="ARM1_SnmpApp" uuid="ff4a1aaa-fcf7-4aa5-8d72-83864bde320c">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="f7b66413-ad5f-4828-b766-138b588e1ea9" file="ARM1_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="b8b515ca-adea-4a6e-98a9-5ca9fefed77b" address-map="ARM1_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="5104207c-c492-43bd-a420-8db41777f104" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="49f422a0-9b8a-478f-b5d4-be3c43f7e4b3" network="Network1" address="192.168.100.110" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="9f264136-8238-4779-80fb-856a3bf22e2d" network="Network2" address="192.168.101.110" />
+    </dp:computer>
+  </dp:domain>
+</omx>

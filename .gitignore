@@ -1,0 +1,22 @@
+# gitignore
+# игнорируем всё
+/*
+# кроме
+!AstraRegul_stand.project
+!*.MD
+!.gitignore
+
+# кроме папки
+!SETTINGS/
+
+# кроме папки
+!AS/
+# но в ней игнорируем
+AS/LIBRARIES/*
+AS/AstraRegul_stand/bin/*
+
+# кроме папки
+!HMI/
+# но в ней игнорируем
+HMI/externals/*
+HMI/output/*

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution Id="95345de3-d900-4ce8-9231-2b87621e4c00">
+  <Projects>
+    <Project FilePath="LIBRARIES\PsTechEE\PsTechEE.omx-project" />
+    <Project FilePath="LIBRARIES\PsBase\PsBase.omx-project" />
+    <Project FilePath="LIBRARIES\PsDiagn\PsDiagn.omx-project" />
+    <Project FilePath="AstraRegul_stand\AstraRegul_stand.omx-project" />
+  </Projects>
+</Solution>
