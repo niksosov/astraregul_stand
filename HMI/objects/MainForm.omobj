@@ -1,0 +1,67 @@
+<type access-modifier="private" name="MainForm" display-name="MainForm" uuid="942f4cde-7cd6-49a8-ad05-a4935d8c41e1" base-type="MainForm" base-type-id="663d20ff-0041-4627-b0b9-e86b3cdc2dad" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1920" ver="5"/>
+	<designed target="Height" value="1080" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="2" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="OpenDiagnForm" display-name="OpenDiagnForm" uuid="4c05a91c-d449-456b-8d29-90bc5fa60fa3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="ed5cd9b9-8490-4c4c-b903-2b43f0e0ebdc" base-type="MainMenuForm" base-type-id="f4be34a1-c5a2-4284-a327-b1c160db886c" ver="5"/>
+		</do-on>
+	</object>
+	<init target="RefOpenMenuForm" ver="5" ref="OpenDiagnForm"/>
+	<object access-modifier="private" name="OpenMainMenuForm" display-name="OpenMainMenuForm" uuid="0b2090a9-2cb7-43ef-a173-896a3679c363" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="15edea66-43ad-40f3-aa9a-1cf607fb9acc" base-type="DiagnForm" base-type-id="b67973b0-35af-4ede-8a41-613dac29d6d2" ver="5"/>
+		</do-on>
+	</object>
+	<init target="RefOpenDiagnForm" ver="5" ref="OpenMainMenuForm"/>
+	<object access-modifier="private" name="OpenMainDefaultForm" display-name="OpenMainDefaultForm" uuid="50aa5463-85fc-4471-b346-cc620be9241f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="70be45dc-4103-41ce-a671-15f6920cd6e1" base-type="ProjectForm" base-type-id="fdf1e920-9053-4098-84e6-fc7ddbfdc5bc" ver="5"/>
+		</do-on>
+	</object>
+	<init target="RefOpenDefaultForm" ver="5" ref="OpenMainDefaultForm"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[OpenMainDefaultForm.Invoke();]]>
+		</body>
+	</do-on>
+</type>
+

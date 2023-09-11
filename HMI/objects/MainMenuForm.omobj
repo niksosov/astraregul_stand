@@ -1,0 +1,109 @@
+<type access-modifier="private" name="MainMenuForm" display-name="MainMenuForm" uuid="f4be34a1-c5a2-4284-a327-b1c160db886c" base-type="Mnemoschem" base-type-id="64806c44-c3c8-49e6-8d51-bb5ea5b1f1dc" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1900" ver="5"/>
+	<designed target="Height" value="960" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff32363f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1900" ver="5"/>
+	<designed target="WindowHeight" value="860" ver="5"/>
+	<designed target="WindowCaption" value="Главное меню" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="false" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="2363abdc-024e-41d1-8d8f-be53255ada3c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="34" ver="5"/>
+		<designed target="Y" value="62" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="200" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b9537dfb-598f-4953-b4f7-1b7533bffb4d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="d85742a3-e8a3-4da6-aba5-d2c33f1d6c65" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="75" ver="5"/>
+				<designed target="Y" value="5.3333333333333286" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="100" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Меню" ver="5"/>
+				<designed target="Font" value="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="btnMenuNavigation_1" display-name="btnMenuNavigation_1" uuid="6cc056be-a311-4bc8-b1f3-7b4e4b4d748a" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="23.333333333333343" ver="5"/>
+			<designed target="Y" value="41.333333333333329" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="032a6455-4e2d-4718-b04f-e9f38aebb755" base-type="ProjectForm" base-type-id="fdf1e920-9053-4098-84e6-fc7ddbfdc5bc" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+		</object>
+	</object>
+</type>
+
