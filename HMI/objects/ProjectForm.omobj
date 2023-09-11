@@ -1937,17 +1937,12 @@
 		<init target="init_Source" ver="5" ref="unit.Connections.AP_SOURCE_MAIN"/>
 		<init target="init_Path" ver="5" value="ASTRAREGUL_DEMOSTAND.REGUL_R500.SYSTEM1.AI1.FB_AI1"/>
 	</object>
-	<object access-modifier="private" name="VLV_D_1" display-name="VLV_D_1" uuid="8552edfb-c730-467b-8326-589014bfce88" base-type="VLV_D" base-type-id="6fe1218c-4e69-4277-a7ce-bc2f3755eabd" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="VLV_D_5" display-name="VLV_D_5" uuid="f0f27d4f-a10a-4816-9011-8e8e8aa3eed5" base-type="VLV_D" base-type-id="6fe1218c-4e69-4277-a7ce-bc2f3755eabd" ver="5" description="" cardinal="1">
 		<designed target="X" value="1610" ver="5"/>
 		<designed target="Y" value="853" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<init target="init_Path" ver="5" value="ASTRAREGUL_DEMOSTAND.REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_D"/>
 		<init target="init_Source" ver="5" ref="unit.Connections.AP_SOURCE_MAIN"/>
-		<init target="COLOR_ENVIRONMENT" ver="5">
-			<expr>
-				<![CDATA[unit.ColorsEnv.COLOR_GAS]]>
-			</expr>
-		</init>
 	</object>
 </type>
 
