@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <omx Id="48bd555e-5931-4a66-9b97-a1720426dcaa" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <link-unit Id="a2e4cf79-3494-449a-83aa-071f9e04f159" Left="40" Top="40" Width="150.14" Height="36.63" />
+    <link-unit Id="7f3e33ea-549e-4de7-bee2-1f41a69dcef8" Left="230.14" Top="40" Width="145.943333333333" Height="36.63" />
+    <link-unit Id="5809dc29-0488-4192-a922-632b586a5d66" Left="416.083333333333" Top="40" Width="133.45" Height="36.63" />
+    <domain Id="a353417e-90da-4a52-9a9a-829a0d0bc0b4" Left="589.533333333333" Top="40" Width="175.77" Height="332.63" />
+    <link-unit Id="e570d3cd-a4b2-4d1b-a24d-e52a551b8411" Left="48" Top="102" Width="128.676666666667" Height="36.63" />
+    <link-unit Id="ec0188e3-b40d-4954-b152-22989eb4b02a" Left="232" Top="98" Width="135.03" Height="36.63" />
+    <link-unit Id="ba6fc4e2-d0cf-4a72-a3fb-880b25d54882" Left="414" Top="99" Width="139.23" Height="36.63" />
+  </omx>
+  <domain Id="a353417e-90da-4a52-9a9a-829a0d0bc0b4" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <domain-node Id="9d3a3416-0dea-43c9-9569-03a9fe98d6fc" Left="764" Top="225" Width="125.463333333333" Height="172" />
+    <application-object Id="bc297d2e-24ed-46a0-b0f9-7dbe9c5516e4" Left="59" Top="408" Width="97.44" Height="32" />
+    <workstation Id="2c62b4b3-7442-459c-9b77-4932836f4198" Left="1084.46333333333" Top="227" Width="125.463333333333" Height="132" />
+    <computer Id="e3cbe8ef-c65c-4496-969d-5f6d5db93575" Left="14.926666666667" Top="26" Width="186.77" Height="124" />
+    <computer Id="f9b8bb34-4a6b-43df-a8c0-53a9cadaa93d" Left="15.6966666666671" Top="164" Width="185.91" Height="124" />
+    <ethernet-net Id="fbbbbc81-6a1a-43a8-ac47-72d99cbfa5fb" Left="851.606666666667" Top="467" Width="128.073333333333" Height="32.59" />
+    <ethernet-net Id="cb9d75e2-f81a-4c2a-97f7-16e139260dd9" Left="339.68" Top="37" Width="105.88" Height="32.59" />
+    <ethernet-net Id="79731ee6-a842-45a2-9d5a-0a049ddcf2a6" Left="340.56" Top="121" Width="105.88" Height="32.59" />
+    <computer Id="45686d34-8cea-4cb0-a086-857a1de6b639" Left="494.606666666667" Top="51" Width="146.836666666667" Height="76" />
+    <computer Id="14446737-25f2-4873-b52f-a18db417186d" Left="497.44333333333" Top="151" Width="146.836666666667" Height="76" />
+    <domain-node Id="3a484811-ee25-4b9a-86a6-8dfbcbb0dd31" Left="762.606666666667" Top="31" Width="125.463333333333" Height="172" />
+    <domain-node Id="6a39d4a7-b7ae-4d92-9997-08b6831f1ba5" Left="926.07" Top="33" Width="125.463333333333" Height="172" />
+    <computer Id="2057bee5-ed1d-4e68-9f73-240999282083" Left="926.53333333333" Top="227" Width="125.463333333333" Height="132" />
+  </domain>
+  <computer Id="e3cbe8ef-c65c-4496-969d-5f6d5db93575" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <external-runtime Id="84eeb3b0-8875-4438-8474-70822b8444be" Left="30" Top="30" Width="109.013333333333" Height="56" />
+    <external-runtime Id="48a42c65-8380-420f-8564-7aa82f1da2b9" Left="199.013333333333" Top="30" Width="112.016666666667" Height="56" />
+    <ethernet-adapter Id="b8ae9650-a084-4fb1-8ee2-9d7c5c5244d7" Left="1145.53666666667" Top="297.520687599182" Width="144.463333333333" Height="45.63" />
+    <ethernet-adapter Id="e572abf7-a596-4c18-bc75-807edd0a9c42" Left="1145.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
+  </computer>
+  <external-runtime Id="84eeb3b0-8875-4438-8474-70822b8444be" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <application-object Id="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3" Left="785.123333333333" Top="26" Width="179.876666666667" Height="54" />
+    <opcua-server Id="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" Left="1060.39" Top="26" Width="171.61" Height="58.59" />
+  </external-runtime>
+  <application-object Id="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <opcua-link-map Id="5bb4ac8c-d667-41f7-8dad-0d9ef74442eb" Left="66" Top="26" Width="231.326666666667" Height="61.63" />
+    <object Id="981c4bb2-38c8-4678-96d5-4b6a5c93390a" Left="364" Top="27" Width="150" Height="100" />
+  </application-object>
+  <object Id="981c4bb2-38c8-4678-96d5-4b6a5c93390a" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="b183b1b2-4383-4a11-be6a-2d812e057ae8" Left="78" Top="26" Width="150" Height="100" />
+    <object Id="2c5eeae5-7131-4f01-81b6-a01903e68f0b" Left="243" Top="27" Width="150" Height="100" />
+    <object Id="5998d531-f650-441a-9e0d-e40b99374d90" Left="410" Top="27" Width="150" Height="100" />
+  </object>
+  <object Id="b183b1b2-4383-4a11-be6a-2d812e057ae8" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="c1b9983f-a4a2-49a0-8c85-9ff0d542d5f8" Left="66" Top="26" Width="150" Height="100" />
+    <object Id="4c6663fc-5919-4d08-913c-9716ab110840" Left="238" Top="25" Width="150" Height="100" />
+    <object Id="9a5fffb8-a095-4bcc-be49-ceb15c5d3c4c" Left="415" Top="25" Width="150" Height="100" />
+    <object Id="af90dcad-6dfc-4362-bd92-952160427246" Left="604" Top="26" Width="150" Height="100" />
+  </object>
+  <object Id="c1b9983f-a4a2-49a0-8c85-9ff0d542d5f8" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="102cd048-4c7a-4d83-b1be-23a55cbbb3e0" Left="75" Top="26" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+  </object>
+  <object Id="4c6663fc-5919-4d08-913c-9716ab110840" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="1d48a8b4-7f9c-44a5-9286-3ae307f6f8a7" Left="66" Top="26" Width="250.453333333333" Height="280">
+      <Inputs />
+      <Outputs />
+    </object>
+  </object>
+  <object Id="9a5fffb8-a095-4bcc-be49-ceb15c5d3c4c" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="c4b013c5-872c-4a1e-9e4d-e858f7412292" Left="66" Top="26" Width="244.893333333333" Height="255">
+      <Inputs />
+      <Outputs />
+    </object>
+  </object>
+  <object Id="af90dcad-6dfc-4362-bd92-952160427246" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="fea7a4b4-ef8d-46fb-9e11-c1324a61b67b" Left="75" Top="26" Width="235" Height="244" />
+  </object>
+  <external-runtime Id="48a42c65-8380-420f-8564-7aa82f1da2b9" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <application-object Id="0a990b55-5f75-4e1f-b57d-e2adeea97762" Left="698.37" Top="26" Width="223.88" Height="54" />
+    <opcua-server Id="fd158e2c-6dc8-4201-9faf-e558a526ec32" Left="1037.39" Top="26" Width="171.61" Height="58.59" />
+  </external-runtime>
+  <application-object Id="0a990b55-5f75-4e1f-b57d-e2adeea97762" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <opcua-link-map Id="ee821b52-7152-43c0-a3b8-868626af0366" Left="66" Top="26" Width="275.33" Height="61.63" />
+    <object Id="d625a434-d2b5-47e3-bb83-13396988a145" Left="399" Top="28" Width="150" Height="100" />
+  </application-object>
+  <object Id="d625a434-d2b5-47e3-bb83-13396988a145" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="4c0272dd-f04f-4fe2-88c6-0f001738cc98" Left="94" Top="31" Width="150" Height="100" />
+    <object Id="e9e65599-4758-4610-87c6-b387f0647e95" Left="279" Top="26" Width="341" Height="677" />
+  </object>
+  <object Id="4c0272dd-f04f-4fe2-88c6-0f001738cc98" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="c9a29d59-93ba-42ed-bc18-8091aba368be" Left="66" Top="26" Width="150" Height="100" />
+    <object Id="ab700793-67e4-49d3-8137-e7b95886ca40" Left="236" Top="27" Width="150" Height="100" />
+    <object Id="2df4630d-c191-4cd0-ad77-4f48a23ada1b" Left="403" Top="28" Width="150" Height="100">
+      <Outputs />
+    </object>
+    <object Id="e32c7bf5-02c0-4ed0-9a0d-f9cbf31b4dcb" Left="573" Top="29" Width="150" Height="100" />
+    <object Id="ed41583d-a5f1-4159-b516-d984cada0fef" Left="67" Top="144" Width="150" Height="100" />
+    <object Id="6dadcb9e-2834-42cc-8819-b0dfd64a8f69" Left="234" Top="141" Width="150" Height="100" />
+    <object Id="d90aa5b0-0b47-481d-b82c-b6bdb9b55ab4" Left="402" Top="141" Width="150" Height="100" />
+    <object Id="562922ef-cddd-4bf0-838f-18f702ee9681" Left="570" Top="147" Width="150" Height="100" />
+  </object>
+  <computer Id="f9b8bb34-4a6b-43df-a8c0-53a9cadaa93d" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <external-redundant-runtime Id="50e75d02-dcb8-4b18-a9c8-01c7de407a8d" Left="30" Top="30" Width="113.343333333333" Height="57" />
+    <external-runtime Id="9f855c2a-a512-4285-b352-0dae78df023b" Left="203.343333333333" Top="30" Width="112.016666666667" Height="56" />
+    <ethernet-adapter Id="8adfe462-fc3d-4583-8373-8317ccee70d6" Left="1088.53666666667" Top="297.520687599182" Width="144.463333333333" Height="45.63" />
+    <ethernet-adapter Id="7f4b2042-6bfc-48dc-9d45-97e95dfcbaac" Left="1088.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
+  </computer>
+  <external-runtime Id="9f855c2a-a512-4285-b352-0dae78df023b" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <application-object Id="b01fabcb-7fef-4ced-a011-bad4a46f9557" Left="699.23" Top="26" Width="223.02" Height="54" />
+    <opcua-server Id="6d2a9414-be26-44f5-9c3a-cd7e40fb7cc8" Left="1037.39" Top="26" Width="171.61" Height="58.59" />
+  </external-runtime>
+  <application-object Id="b01fabcb-7fef-4ced-a011-bad4a46f9557" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <opcua-link-map Id="f37c8ae0-3a96-4374-b45a-1fb4f7c507e8" Left="66" Top="26" Width="274.47" Height="61.63" />
+    <object Id="edf08ce1-647c-4683-beed-ef9b487b32f1" Left="412" Top="30" Width="150" Height="100" />
+  </application-object>
+  <object Id="edf08ce1-647c-4683-beed-ef9b487b32f1" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="c0ff6258-f24c-4d69-9dc1-e0492800dbd0" Left="66" Top="26" Width="98.7833333333333" Height="208" />
+    <object Id="28650028-0bc8-4c7e-af68-164bf4af6af7" Left="184.783333333333" Top="26" Width="328.36" Height="656.63" />
+  </object>
+  <object Id="c0ff6258-f24c-4d69-9dc1-e0492800dbd0" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="bb861299-effa-4c76-9cfb-49d6e1e5f7a7" Left="66" Top="26" Width="320.056666666667" Height="84.63" />
+    <object Id="09ef2258-138f-4b0e-a662-95a7229d4115" Left="406.056666666667" Top="26" Width="321.483333333333" Height="84.63" />
+    <object Id="834802be-2b8a-49c6-a37a-66c7ebec4fa8" Left="747.54" Top="26" Width="316.89" Height="314.63">
+      <Outputs />
+    </object>
+    <object Id="c3fb7c3e-9bda-4cf6-b1bb-cd8ae5a474da" Left="66" Top="126" Width="318.123333333333" Height="128.63" />
+    <object Id="5a8b14f2-e5fe-444d-b4d1-e93ce5bf1b33" Left="404.123333333333" Top="126" Width="327.19" Height="304.63" />
+    <object Id="139a8552-97a9-4ea7-a1d9-14635df72dcf" Left="751.313333333333" Top="356" Width="328.856666666667" Height="128.63" />
+    <object Id="4555e1dc-ed2c-4140-90e7-bee832bae461" Left="66" Top="446" Width="351.093333333333" Height="216.63" />
+    <object Id="285d78fa-eb26-4ed6-944c-d65684bd923b" Left="66" Top="266" Width="320.056666666667" Height="84.63" />
+  </object>
+  <domain-node Id="3a484811-ee25-4b9a-86a6-8dfbcbb0dd31" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <io-server Id="ac4d688e-ebfe-46fa-8534-a84503a5be48" Left="30" Top="30" Width="206.163333333333" Height="124" />
+    <historian Id="e5587517-afb2-47bf-87b0-abb67043a267" Left="330.75" Top="307.520687599182" Width="139.72" Height="110" />
+    <external-runtime Id="d4627e25-a688-4c30-9517-06884bd8c384" Left="296.163333333333" Top="30" Width="102.493333333333" Height="56" />
+    <ethernet-adapter Id="b2fe6162-d916-4e87-8a5c-3d2e1f260845" Left="1131.78333333333" Top="297.520687599182" Width="101.216666666667" Height="45.63" />
+    <ethernet-adapter Id="f25f6efc-aec6-4ed8-a2e9-74232510a3c8" Left="1088.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
+    <ethernet-adapter Id="4bac7536-c1a0-48ff-876f-90d58510c036" Left="1088.53666666667" Top="428.780687599182" Width="144.463333333333" Height="45.63" />
+  </domain-node>
+  <external-runtime Id="d4627e25-a688-4c30-9517-06884bd8c384" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <application-object Id="7b70d90b-e127-4768-ac40-66293c2f528f" Left="773.38" Top="26" Width="148.87" Height="54" />
+    <snmp-agent Id="51449b79-6973-4c58-a6da-2ba822a0dc48" Left="1064.03" Top="26" Width="144.97" Height="58.59" />
+  </external-runtime>
+  <application-object Id="7b70d90b-e127-4768-ac40-66293c2f528f" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <snmp-link-map Id="2a7db272-c535-4950-be71-e3929ba02863" Left="66" Top="26" Width="200.32" Height="61.63" />
+  </application-object>
+  <io-server Id="ac4d688e-ebfe-46fa-8534-a84503a5be48" OffsetX="263.003333333333" OffsetY="0" Scale="1" SnapToGrid="false">
+    <tcp-server Id="779d402c-8c0c-4e75-a3d2-dd578653a185" Left="1346.27" Top="26" Width="112.733333333333" Height="36.63" />
+    <opcaeserver-module Id="ecfe9b86-ac56-458c-8a2f-89d617fb9c76" Left="1343.97666666667" Top="102.63" Width="115.026666666667" Height="36.63" />
+    <opcua-module Id="5537a3fc-5064-423c-92c6-6b34832ffdaf" Left="1342.25" Top="179.26" Width="116.753333333333" Height="36.63" />
+    <snmp-manager Id="d4f4ae11-ad56-4ffa-a4a6-94377ea62f1a" Left="24" Top="26" Width="247.376666666667" Height="178.63" />
+    <opcua-client Id="f8b419ec-a2f0-411e-bc65-024903363c95" Left="24" Top="244.63" Width="322" Height="126.63" />
+    <history-module Id="f1f72197-3555-4f3c-9206-66edb9d0d926" Left="388" Top="428.528962638855" Width="291.65" Height="204.63" />
+    <host Id="dp:host[4]" Left="1192.81" Top="26" Width="107.44" Height="24" />
+  </io-server>
+  <domain-node Id="6a39d4a7-b7ae-4d92-9997-08b6831f1ba5" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <redundant-server Id="2a13d06b-3026-4339-a5cd-c80b8dada162" Left="30" Top="30" Width="206.163333333333" Height="105" />
+    <historian Id="c793f905-05d6-4997-87bb-47a87b6e08cb" Left="330.75" Top="307.520687599182" Width="139.72" Height="110" />
+    <external-runtime Id="248fc4ec-51e6-4651-b626-5f5b3bbfec98" Left="296.163333333333" Top="30" Width="102.493333333333" Height="56" />
+    <ethernet-adapter Id="2554e922-d1a4-4a9b-9599-48a6818de837" Left="1131.78333333333" Top="297.520687599182" Width="101.216666666667" Height="45.63" />
+    <ethernet-adapter Id="5fd1cdab-f3b1-41cb-8493-f714ad40584f" Left="1088.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
+    <ethernet-adapter Id="8ef2d888-9f72-4c78-89de-779c80c0903d" Left="1088.53666666667" Top="428.780687599182" Width="144.463333333333" Height="45.63" />
+  </domain-node>
+  <domain-node Id="9d3a3416-0dea-43c9-9569-03a9fe98d6fc" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <io-server Id="8a9b21fe-0d4c-4db8-98e9-341b5db1ed68" Left="30" Top="30" Width="210.143333333333" Height="172" />
+    <historian Id="78c99ef7-2c3b-42b6-913f-a865b58829fc" Left="330.75" Top="307.520687599182" Width="139.72" Height="110" />
+    <external-runtime Id="acb3f062-d587-4c08-a70d-da6708f80751" Left="300.143333333333" Top="30" Width="102.493333333333" Height="56" />
+    <ethernet-adapter Id="35f2b02f-480e-43eb-b5e4-c3bdae6175cc" Left="1131.78333333333" Top="297.520687599182" Width="101.216666666667" Height="45.63" />
+    <ethernet-adapter Id="96c95f52-05d8-41f7-a198-11d4212e7828" Left="1088.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
+    <ethernet-adapter Id="dc804327-e1e4-4ce2-afe2-98becfef1d26" Left="1088.53666666667" Top="428.780687599182" Width="144.463333333333" Height="45.63" />
+  </domain-node>
+  <io-server Id="8a9b21fe-0d4c-4db8-98e9-341b5db1ed68" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <opcda-server Id="8f98224f-9de8-49bc-a069-2768aae037b0" Left="1350.06" Top="26" Width="116.906666666667" Height="36.63" />
+    <tcp-server Id="c6c9ae52-43e0-445c-80cf-4ff80aed95bd" Left="1354.23333333333" Top="102.63" Width="112.733333333333" Height="36.63" />
+    <opcaeserver-module Id="5a5e00c4-c70d-4716-b2bb-f8e465fda602" Left="1351.94" Top="179.26" Width="115.026666666667" Height="36.63" />
+    <opcua-module Id="f75b30e6-dfe8-4f69-94a3-1e61aa0d134a" Left="1350.21333333333" Top="255.89" Width="116.753333333333" Height="36.63" />
+    <hda-server Id="2296bce6-698b-43d4-9375-6710102f04f1" Left="1342.25" Top="332.52" Width="124.716666666667" Height="36.63" />
+    <snmp-manager Id="8c00789d-e2c8-411f-9b59-1037357a0118" Left="24" Top="26" Width="247.376666666667" Height="178.63" />
+    <opcua-client Id="b02335b4-17bd-4da0-b730-7ea2765b33c8" Left="24" Top="244.63" Width="322" Height="126.63" />
+    <history-module Id="5bae6e49-084a-405f-b504-6ed522bdd040" Left="388" Top="428.528962638855" Width="298.383333333333" Height="126.63" />
+    <host Id="dp:host[6]" Left="1192.81" Top="26" Width="107.44" Height="24" />
+  </io-server>
+  <computer Id="2057bee5-ed1d-4e68-9f73-240999282083" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <external-runtime Id="8cf575c7-585a-497c-a293-dc296d655726" Left="30" Top="30" Width="102.493333333333" Height="56" />
+    <ethernet-adapter Id="5104207c-c492-43bd-a420-8db41777f104" Left="1131.78333333333" Top="297.520687599182" Width="101.216666666667" Height="45.63" />
+    <ethernet-adapter Id="49f422a0-9b8a-478f-b5d4-be3c43f7e4b3" Left="1088.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
+    <ethernet-adapter Id="9f264136-8238-4779-80fb-856a3bf22e2d" Left="1088.53666666667" Top="428.780687599182" Width="144.463333333333" Height="45.63" />
+  </computer>
+  <workstation Id="2c62b4b3-7442-459c-9b77-4932836f4198" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <access-point Id="696a0894-b8ac-4d9e-86e1-9a73f13f18cd" Left="30" Top="30" Width="204.223333333333" Height="152" />
+    <abstract-ethernet-adapter Id="0c3be374-4f5e-483d-a5f2-2ee5950ebdd0" Left="1060.37" Top="297.520687599182" Width="172.63" Height="45.63" />
+    <abstract-ethernet-adapter Id="9367bffc-dab3-4d59-86eb-8a1616ff2232" Left="1060.37" Top="363.150687599182" Width="172.63" Height="45.63" />
+    <abstract-ethernet-adapter Id="45fcad55-d14e-468d-8cc1-638933c5c494" Left="1060.37" Top="428.780687599182" Width="172.63" Height="45.63" />
+  </workstation>
+  <access-point Id="696a0894-b8ac-4d9e-86e1-9a73f13f18cd" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <hub-module Id="7d536ea8-1dd9-4b00-b75e-f7e05b9095fb" Left="24" Top="26" Width="175.29" Height="99.63" />
+    <history-module Id="9f9105ef-4bb8-4b90-bbc0-518562cbc3b2" Left="241.29" Top="428.528962638855" Width="152.443333333333" Height="99.63" />
+    <application-object Id="bd0ecc27-2794-41fa-8db0-0691cf5c706a" Left="1005.15" Top="26" Width="148.39" Height="32" />
+    <tcp-server Id="719d86dc-20f0-4a32-a1ed-9819d57aded9" Left="1213.82" Top="26" Width="112.733333333333" Height="36.63" />
+    <opcda-server Id="7661227d-7a91-4342-a94b-24bfa5505f6e" Left="1209.64666666667" Top="102.63" Width="116.906666666667" Height="36.63" />
+    <opcaeserver-module Id="352b72a5-6210-455e-96bb-09d2e24489a7" Left="1211.52666666667" Top="179.26" Width="115.026666666667" Height="36.63" />
+    <hda-server Id="8c2b56f7-e6bf-43ef-9a71-18437112eb51" Left="1201.83666666667" Top="255.89" Width="124.716666666667" Height="36.63" />
+    <opcua-module Id="39a6ea38-35b3-4d81-9942-d79ab4921ff1" Left="1195.54" Top="332.52" Width="131.013333333333" Height="36.63" />
+  </access-point>
+  <application-object Id="bc297d2e-24ed-46a0-b0f9-7dbe9c5516e4" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="2dbc161a-f3f9-45c2-a2ea-e8f75afffa4b" Left="69" Top="26" Width="206" Height="100" />
+  </application-object>
+  <object Id="2dbc161a-f3f9-45c2-a2ea-e8f75afffa4b" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="ebface6d-09c4-48c9-ab6e-39a5ee048808" Left="105" Top="29" Width="150" Height="100" />
+    <object Id="be3e7052-0f18-49c9-8a35-75ac9bcbedae" Left="316" Top="26" Width="150" Height="100" />
+  </object>
+  <object Id="be3e7052-0f18-49c9-8a35-75ac9bcbedae" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="82714891-c110-495e-9643-13a96e397199" Left="66" Top="29" Width="150" Height="100" />
+    <object Id="8c5fcbca-f08b-44db-8ed0-31bce72dc5e7" Left="246" Top="26" Width="150" Height="100" />
+    <object Id="bb20b73b-511a-4ae8-a0e6-f661edae36db" Left="422" Top="26" Width="150" Height="100" />
+  </object>
+  <object Id="82714891-c110-495e-9643-13a96e397199" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="f1c20608-9e86-491d-8bab-9c56a848b392" Left="66" Top="26" Width="498.383333333333" Height="68.63" />
+    <object Id="06aad573-4ac8-4078-858b-334cbb49b7da" Left="584.383333333333" Top="26" Width="504.65" Height="68.63" />
+    <object Id="ec61bdae-1925-4768-852f-ece5939e69d9" Left="66" Top="110" Width="517.936666666667" Height="68.63" />
+    <object Id="c90ab4fc-86c0-4d74-b8ba-7392a6bfea43" Left="603.936666666667" Top="110" Width="512.91" Height="68.63" />
+  </object>
+  <object Id="ebface6d-09c4-48c9-ab6e-39a5ee048808" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="2bf62659-c836-4ab9-b17a-fac761b300e6" Left="235" Top="25" Width="150" Height="100" />
+    <object Id="324c0eac-e70d-4eb0-8eab-1f364618c6be" Left="66" Top="26" Width="150" Height="100" />
+    <object Id="e303c5a8-0880-48f1-9c13-e5f8c2122915" Left="405" Top="26" Width="319.076666666667" Height="1001.26" />
+  </object>
+  <external-runtime Id="acb3f062-d587-4c08-a70d-da6708f80751" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <application-object Id="a5639926-bd17-41ce-b370-b79beb5bc725" Left="766.646666666667" Top="26" Width="155.603333333333" Height="54" />
+    <snmp-agent Id="31f6cf58-d858-4487-926d-4eda064d6abb" Left="1064.03" Top="26" Width="144.97" Height="58.59" />
+  </external-runtime>
+  <application-object Id="a5639926-bd17-41ce-b370-b79beb5bc725" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <snmp-link-map Id="3c6c7a6b-748b-410a-9f45-f326582d5005" Left="66" Top="26" Width="207.053333333333" Height="61.63" />
+    <object Id="31d1d12c-726e-406a-b222-3029c3a52729" Left="316" Top="31" Width="150" Height="100" />
+  </application-object>
+  <object Id="324c0eac-e70d-4eb0-8eab-1f364618c6be" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="d80eb3c0-7b04-4a93-87ec-527bdba54200" Left="66" Top="26" Width="545.31" Height="222.63" />
+    <object Id="8ba3db9b-47b9-483b-9169-927beedb2cc1" Left="631.31" Top="26" Width="555.576666666667" Height="653.26">
+      <Outputs />
+    </object>
+  </object>
+  <object Id="2bf62659-c836-4ab9-b17a-fac761b300e6" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="a8d27917-897c-4c41-b218-da96ef848b61" Left="66" Top="26" Width="542.94" Height="222.63" />
+    <object Id="a63471f7-789f-4000-a367-b5ddb736591e" Left="628.94" Top="26" Width="553.206666666667" Height="653.26">
+      <Outputs />
+    </object>
+  </object>
+</Diagrams>

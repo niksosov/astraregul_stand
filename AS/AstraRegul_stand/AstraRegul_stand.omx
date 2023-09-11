@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<omx name="astraregul_stand" uuid="322e786e-d5b6-49e8-bd49-12f300dc35c2" xmlns="system" xmlns:a="automation" xmlns:ct="automation.control" xmlns:dp="automation.deployment" xmlns:eth="automation.ethernet" xmlns:modbus="automation.modbus" xmlns:opc="automation.opc" xmlns:r="automation.reference" xmlns:srv="server" xmlns:regul="prosoft.regul" xmlns:snmp="automation.snmp" migration="27">
+<omx name="astraregul_stand" uuid="322e786e-d5b6-49e8-bd49-12f300dc35c2" xmlns="system" xmlns:ct="automation.control" xmlns:dp="automation.deployment" xmlns:eth="automation.ethernet" xmlns:opc="automation.opc" xmlns:srv="server" xmlns:snmp="automation.snmp" migration="27" xmlns:r="automation.reference">
   <link-unit name="System" uuid="a2e4cf79-3494-449a-83aa-071f9e04f159" target="Om.System" />
   <link-unit name="Server" uuid="7f3e33ea-549e-4de7-bee2-1f41a69dcef8" target="Om.Server" />
   <link-unit name="PLC" uuid="5809dc29-0488-4192-a922-632b586a5d66" target="Om.PLC" />
@@ -21,9 +21,15 @@
         </srv:snmp-manager>
         <dp:host module="IOS_App" />
         <srv:opcua-client name="OpcUaClient" uuid="b02335b4-17bd-4da0-b730-7ea2765b33c8" application-mame="ProSystOpcUaClient" logging-required="false">
-          <srv:opcua-server-link server="REGUL_R500_71_W_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
-          <srv:opcua-server-link server="REGUL_R500_71_W_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
-          <srv:opcua-server-link server="REGUL_R500_71_W_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections">
+            <property name="password">evM6XyvxvwP+hJO2LoxSdxJ9aVYJiuHgt4Ld+zaV0kWX7dCop0qPpEWlrkhp0M09zTrRLejgvVenr+RJ9vssKPS1GuqUBRyaamlSaRV3HXKrNhSr93AWtd7QxokhJTimqcxWCq+hE/7XDoYaLZ6LbW//nVglG/nlCAHaYobSO/0</property>
+          </srv:opcua-server-link>
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections">
+            <property name="password">g6CGZEQ2DrKkRC4zUF2plQGgWJbz5PAy+os+nihBI3WhTSfuuYlJ7Hcu2bpX3wy+HNfJey7+1sz1BMyFkoJsQFZkylwEqDsZnWMp/6BMjHrmJHFINVbx5FA8joncDODt0dzl2L80OHf45qTQo/Vh+rpvz7Sa47q2E++A3vpY6Rk</property>
+          </srv:opcua-server-link>
+          <srv:opcua-server-link server="REGUL_R500_71_W_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections">
+            <property name="password">h28FhIbProbG8gDReAZYJ6Ka1c8VC9XTzonokoZLLdFCeJQCykqxE1HFRV+OFK+43rdYlj1RBVqzuWcR7q1CDl4pJ88rkJRNJ3AO5fLxIJK/b13V7FOmhGIQsJSiX4oPQw8uxFJiyHZcgqV03cbBzSXXkoTWicFefYdPmUuOjIg</property>
+          </srv:opcua-server-link>
         </srv:opcua-client>
         <srv:history-module name="HistoryModule" uuid="5bae6e49-084a-405f-b504-6ed522bdd040">
           <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_HISTORY" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
@@ -39,6 +45,11 @@
       <dp:external-runtime name="SNMP" uuid="acb3f062-d587-4c08-a70d-da6708f80751">
         <dp:application-object name="STATION_SnmpApp" uuid="a5639926-bd17-41ce-b370-b79beb5bc725">
           <snmp:snmp-link-map name="SnmpLinkMap" uuid="3c6c7a6b-748b-410a-9f45-f326582d5005" file="STATION_SnmpMap.xml" />
+          <ct:object name="STATION" uuid="31d1d12c-726e-406a-b222-3029c3a52729" base-type="PsDiagn.COMPUTER.PLC_View" aspect="PsBase.Aspects.PLC_Aspect">
+            <attribute type="unit.System.Attributes.Title" value="STATION" />
+            <attribute type="unit.PsDiagn.Attributes.KKS" value="STATION" />
+            <attribute type="unit.System.Attributes.Description" value="STATION - Инженерная станция" />
+          </ct:object>
         </dp:application-object>
         <snmp:snmp-agent name="SnmpAgent" uuid="31f6cf58-d858-4487-926d-4eda064d6abb" address-map="STATION_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
           <property name="poll-authkey" />
@@ -51,7 +62,242 @@
       <eth:ethernet-adapter name="EthernetAdapter1" uuid="96c95f52-05d8-41f7-a198-11d4212e7828" network="Network1" address="192.168.100.100" />
       <eth:ethernet-adapter name="EthernetAdapter2" uuid="dc804327-e1e4-4ce2-afe2-98becfef1d26" network="Network2" address="192.168.101.100" />
     </dp:domain-node>
-    <dp:application-object name="IOS_App" uuid="bc297d2e-24ed-46a0-b0f9-7dbe9c5516e4" />
+    <dp:application-object name="IOS_App" uuid="bc297d2e-24ed-46a0-b0f9-7dbe9c5516e4">
+      <ct:object name="ASTRAREGUL_DEMOSTAND" uuid="2dbc161a-f3f9-45c2-a2ea-e8f75afffa4b">
+        <ct:object name="DIAGNOSTICS" uuid="ebface6d-09c4-48c9-ab6e-39a5ee048808">
+          <ct:object name="REGUL_R500_A" uuid="324c0eac-e70d-4eb0-8eab-1f364618c6be">
+            <ct:object name="CRATE01" uuid="d80eb3c0-7b04-4a93-87ec-527bdba54200" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01</property>
+              <ct:object name="ST_01_012" uuid="c0719e25-7aa6-43d7-a427-ea2ec28809e9" base-type="unit.PsDiagn.REGUL.R500.MODULES.ST.ST_01_012.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.ST_01_012</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.ST_01_012</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.ST_01_012</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="PP_00_011" uuid="068a597b-f35d-427b-8236-96babc6cddbf" base-type="unit.PsDiagn.REGUL.R500.MODULES.PP.PP_00_011.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.PP_00_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.PP_00_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.PP_00_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="AI_08_041" uuid="c1eeaab1-8d1f-4d38-84ca-cb3fc8375dac" base-type="unit.PsDiagn.REGUL.R500.MODULES.AI.AI_08_041.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.AI_08_041</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.AI_08_041</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.AI_08_041</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="DI_32_011" uuid="17a486c7-e527-4c8d-8637-5289adce62d6" base-type="unit.PsDiagn.REGUL.R500.MODULES.DI.DI_32_011.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DI_32_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DI_32_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DI_32_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="AO_08_031" uuid="b9d0514e-cad9-4846-9b10-108c5500c943" base-type="unit.PsDiagn.REGUL.R500.MODULES.AO.AO_08_031.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.AO_08_031</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.AO_08_031</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.AO_08_031</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="DO_32_011" uuid="d6e3a52f-7aa2-493f-8258-851b66a14af7" base-type="unit.PsDiagn.REGUL.R500.MODULES.DO.DO_32_011.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DO_32_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DO_32_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DO_32_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="DA_03_011" uuid="c123890c-831a-4ad8-b4d1-5db4486c0457" base-type="unit.PsDiagn.REGUL.R500.MODULES.DA.DA_03_011_ENC.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DA_03_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DA_03_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.DA_03_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="ST_01_022" uuid="136b4732-fd62-43dd-b786-2850f10e0706" base-type="unit.PsDiagn.REGUL.R500.MODULES.ST.ST_01_022.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.ST_01_022</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.ST_01_022</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CRATE01.ST_01_022</property>
+                </r:init-ref>
+              </ct:object>
+            </ct:object>
+            <ct:object name="CU_00_071" uuid="8ba3db9b-47b9-483b-9169-927beedb2cc1" base-type="unit.PsDiagn.REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CU_00_071</property>
+              <r:init-ref ref="_PLC_View">
+                <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CU_00_071</property>
+              </r:init-ref>
+              <r:init-ref ref="_PLC_BaseView">
+                <property name="target">REGUL_R500_71_W_A.Diagnostics.REGUL_R500_71_W_A_DiagnApp.REGUL_R500_A.CU_00_071</property>
+              </r:init-ref>
+            </ct:object>
+          </ct:object>
+          <ct:object name="REGUL_R500_B" uuid="2bf62659-c836-4ab9-b17a-fac761b300e6">
+            <ct:object name="CRATE01" uuid="a8d27917-897c-4c41-b218-da96ef848b61" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01</property>
+              <ct:object name="ST_01_012" uuid="25f88892-7a3a-4176-be7b-eb1b965bdeb9" base-type="unit.PsDiagn.REGUL.R500.MODULES.ST.ST_01_012.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.ST_01_012</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.ST_01_012</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.ST_01_012</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="PP_00_011" uuid="9d0258ee-2b1e-442e-9cbd-bc25a220739c" base-type="unit.PsDiagn.REGUL.R500.MODULES.PP.PP_00_011.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.PP_00_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.PP_00_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.PP_00_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="AI_08_041" uuid="0b3b48da-1dcd-440f-b276-91de4790994e" base-type="unit.PsDiagn.REGUL.R500.MODULES.AI.AI_08_041.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.AI_08_041</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.AI_08_041</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.AI_08_041</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="DI_32_011" uuid="0edd144b-7337-435b-869b-50896ef0d40d" base-type="unit.PsDiagn.REGUL.R500.MODULES.DI.DI_32_011.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DI_32_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DI_32_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DI_32_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="AO_08_031" uuid="ef54462f-773d-497d-8c13-66df5a356dc0" base-type="unit.PsDiagn.REGUL.R500.MODULES.AO.AO_08_031.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.AO_08_031</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.AO_08_031</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.AO_08_031</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="DO_32_011" uuid="daab9c77-b309-48eb-b897-e7bd9505e9ed" base-type="unit.PsDiagn.REGUL.R500.MODULES.DO.DO_32_011.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DO_32_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DO_32_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DO_32_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="DA_03_011" uuid="66a0f64c-e009-4e38-b123-dd5b89d3f580" base-type="unit.PsDiagn.REGUL.R500.MODULES.DA.DA_03_011_ENC.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DA_03_011</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DA_03_011</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.DA_03_011</property>
+                </r:init-ref>
+              </ct:object>
+              <ct:object name="ST_01_022" uuid="6e9af363-e1f2-44cb-afcd-3a5e0574980a" base-type="unit.PsDiagn.REGUL.R500.MODULES.ST.ST_01_022.IOS_VIew" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.ST_01_022</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.ST_01_022</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CRATE01.ST_01_022</property>
+                </r:init-ref>
+              </ct:object>
+            </ct:object>
+            <ct:object name="CU_00_071" uuid="a63471f7-789f-4000-a367-b5ddb736591e" base-type="unit.PsDiagn.REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CU_00_071</property>
+              <r:init-ref ref="_PLC_View">
+                <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CU_00_071</property>
+              </r:init-ref>
+              <r:init-ref ref="_PLC_BaseView">
+                <property name="target">REGUL_R500_71_W_B.Diagnostics.REGUL_R500_71_W_B_DiagnApp.REGUL_R500_B.CU_00_071</property>
+              </r:init-ref>
+            </ct:object>
+          </ct:object>
+          <ct:object name="STATION" uuid="e303c5a8-0880-48f1-9c13-e5f8c2122915" original="STATION.SNMP.STATION_SnmpApp.STATION" base-type="unit.PsDiagn.COMPUTER.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="AstraRegul.STATION.SNMP.STATION_SnmpApp.STATION" />
+            <r:init-ref ref="_PLC_BaseView" target="AstraRegul.STATION.SNMP.STATION_SnmpApp.STATION" />
+          </ct:object>
+        </ct:object>
+        <ct:object name="REGUL_R500" uuid="be3e7052-0f18-49c9-8a35-75ac9bcbedae">
+          <ct:object name="SYSTEM1" uuid="82714891-c110-495e-9643-13a96e397199" aspect="PsBase.Aspects.IOS_Aspect" original="REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1">
+            <ct:object name="AI1" uuid="f1c20608-9e86-491d-8bab-9c56a848b392" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.AI1</property>
+              <ct:object name="FB_AI1" uuid="e56e6ae9-9528-4347-aa1e-5de8d918205b" base-type="unit.PsTechEE.Types.AI1.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.AI1.FB_AI1</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.AI1.FB_AI1</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.AI1.FB_AI1</property>
+                </r:init-ref>
+              </ct:object>
+            </ct:object>
+            <ct:object name="MTR" uuid="06aad573-4ac8-4078-858b-334cbb49b7da" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.MTR</property>
+              <ct:object name="FB_MTR" uuid="e9915ee7-1c44-45bc-b04c-125ee915fa53" base-type="unit.PsTechEE.Types.MTR.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.MTR.FB_MTR</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.MTR.FB_MTR</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.MTR.FB_MTR</property>
+                </r:init-ref>
+              </ct:object>
+            </ct:object>
+            <ct:object name="VLV_C2" uuid="ec61bdae-1925-4768-852f-ece5939e69d9" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_C2</property>
+              <ct:object name="FB_VLV_C2" uuid="ad5867af-4b8d-4403-b15d-d8bb98c01805" base-type="unit.PsTechEE.Types.VLV_C2.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2</property>
+                </r:init-ref>
+              </ct:object>
+            </ct:object>
+            <ct:object name="VLV_D" uuid="c90ab4fc-86c0-4d74-b8ba-7392a6bfea43" aspect="unit.PsBase.Aspects.IOS_Aspect">
+              <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_D</property>
+              <ct:object name="FB_VLV_D" uuid="58adad72-8207-4d46-a30e-3fade8289e42" base-type="unit.PsTechEE.Types.VLV_D.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
+                <property name="original">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D</property>
+                <r:init-ref ref="_PLC_View">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D</property>
+                </r:init-ref>
+                <r:init-ref ref="_PLC_BaseView">
+                  <property name="target">REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D</property>
+                </r:init-ref>
+              </ct:object>
+            </ct:object>
+          </ct:object>
+          <ct:object name="SYSTEM2" uuid="8c5fcbca-f08b-44db-8ed0-31bce72dc5e7" aspect="PsBase.Aspects.IOS_Aspect" original="REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM2" />
+          <ct:object name="SYSTEM3" uuid="bb20b73b-511a-4ae8-a0e6-f661edae36db" aspect="PsBase.Aspects.IOS_Aspect" original="REGUL_R500_71_W_A.Runtime.REGUL_R500_71_W_App.REGUL_R500.SYSTEM3" />
+        </ct:object>
+      </ct:object>
+    </dp:application-object>
     <dp:workstation name="THIN_CLIENT" uuid="2c62b4b3-7442-459c-9b77-4932836f4198">
       <srv:access-point name="AccessPoint" uuid="696a0894-b8ac-4d9e-86e1-9a73f13f18cd">
         <srv:hub-module name="HubModule" uuid="7d536ea8-1dd9-4b00-b75e-f7e05b9095fb">
@@ -74,12 +320,48 @@
       <dp:external-runtime name="Runtime" uuid="84eeb3b0-8875-4438-8474-70822b8444be">
         <dp:application-object name="REGUL_R500_71_W_App" uuid="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3">
           <opc:opcua-link-map name="OpcUaAddressMap" uuid="5bb4ac8c-d667-41f7-8dad-0d9ef74442eb" file="REGUL_R500_71_W_Map.xml" />
+          <ct:object name="REGUL_R500" uuid="981c4bb2-38c8-4678-96d5-4b6a5c93390a">
+            <ct:object name="SYSTEM1" uuid="b183b1b2-4383-4a11-be6a-2d812e057ae8">
+              <ct:object name="AI1" uuid="c1b9983f-a4a2-49a0-8c85-9ff0d542d5f8">
+                <ct:object name="FB_AI1" uuid="102cd048-4c7a-4d83-b1be-23a55cbbb3e0" base-type="PsTechEE.Types.AI1.PLC_View" aspect="PsBase.Aspects.PLC_Aspect" />
+              </ct:object>
+              <ct:object name="VLV_C2" uuid="4c6663fc-5919-4d08-913c-9716ab110840">
+                <ct:object name="FB_VLV_C2" uuid="1d48a8b4-7f9c-44a5-9286-3ae307f6f8a7" base-type="PsTechEE.Types.VLV_C2.PLC_View" aspect="PsBase.Aspects.PLC_Aspect" />
+              </ct:object>
+              <ct:object name="VLV_D" uuid="9a5fffb8-a095-4bcc-be49-ceb15c5d3c4c">
+                <ct:object name="FB_VLV_D" uuid="c4b013c5-872c-4a1e-9e4d-e858f7412292" base-type="PsTechEE.Types.VLV_D.PLC_View" aspect="PsBase.Aspects.PLC_Aspect" />
+              </ct:object>
+              <ct:object name="MTR" uuid="af90dcad-6dfc-4362-bd92-952160427246">
+                <ct:object name="FB_MTR" uuid="fea7a4b4-ef8d-46fb-9e11-c1324a61b67b" base-type="PsTechEE.Types.MTR.PLC_View" aspect="PsBase.Aspects.PLC_Aspect" />
+              </ct:object>
+            </ct:object>
+            <ct:object name="SYSTEM2" uuid="2c5eeae5-7131-4f01-81b6-a01903e68f0b" />
+            <ct:object name="SYSTEM3" uuid="5998d531-f650-441a-9e0d-e40b99374d90" />
+          </ct:object>
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" tag-map="REGUL_R500_71_W_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
       </dp:external-runtime>
       <dp:external-runtime name="Diagnostics" uuid="48a42c65-8380-420f-8564-7aa82f1da2b9">
         <dp:application-object name="REGUL_R500_71_W_A_DiagnApp" uuid="0a990b55-5f75-4e1f-b57d-e2adeea97762">
           <opc:opcua-link-map name="OpcUaAddressMap" uuid="ee821b52-7152-43c0-a3b8-868626af0366" file="REGUL_R500_71_W_A_DiagnMap.xml" />
+          <ct:object name="REGUL_R500_A" uuid="d625a434-d2b5-47e3-bb83-13396988a145">
+            <ct:object name="CRATE01" uuid="4c0272dd-f04f-4fe2-88c6-0f001738cc98">
+              <ct:object name="ST_01_012" uuid="c9a29d59-93ba-42ed-bc18-8091aba368be" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.ST.ST_01_012.PLC_View" />
+              <ct:object name="PP_00_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.PP.PP_00_011.PLC_View" uuid="ab700793-67e4-49d3-8137-e7b95886ca40" />
+              <ct:object name="AI_08_041" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.AI.AI_08_041.PLC_View" uuid="2df4630d-c191-4cd0-ad77-4f48a23ada1b" />
+              <ct:object name="DI_32_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.DI.DI_32_011.PLC_View" uuid="e32c7bf5-02c0-4ed0-9a0d-f9cbf31b4dcb" />
+              <ct:object name="AO_08_031" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.AO.AO_08_031.PLC_View" uuid="ed41583d-a5f1-4159-b516-d984cada0fef" />
+              <ct:object name="DO_32_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.DO.DO_32_011.PLC_View" uuid="6dadcb9e-2834-42cc-8819-b0dfd64a8f69" />
+              <ct:object name="DA_03_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.DA.DA_03_011_ENC.PLC_View" uuid="d90aa5b0-0b47-481d-b82c-b6bdb9b55ab4" />
+              <ct:object name="ST_01_022" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.ST.ST_01_022.PLC_View" uuid="562922ef-cddd-4bf0-838f-18f702ee9681" />
+            </ct:object>
+            <ct:object name="CU_00_071" uuid="e9e65599-4758-4610-87c6-b387f0647e95" base-type="PsDiagn.REGUL.R500.MODULES.CU.CU_XX_XXX.PLC_View" aspect="PsBase.Aspects.PLC_Aspect">
+              <attribute type="unit.System.Attributes.Title" value="CU_00_061" />
+              <attribute type="unit.System.Attributes.Description" value="REGUL_R500_A" />
+              <attribute type="unit.PsBase.Attributes.ALIAS" value="REGUL_R500_A" />
+              <attribute type="unit.PsDiagn.Attributes.KKS" value="REGUL_R500_A" />
+            </ct:object>
+          </ct:object>
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="fd158e2c-6dc8-4201-9faf-e558a526ec32" tag-map="REGUL_R500_71_W_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
       </dp:external-runtime>
@@ -92,19 +374,37 @@
       <dp:external-runtime name="Diagnostics" uuid="9f855c2a-a512-4285-b352-0dae78df023b">
         <dp:application-object name="REGUL_R500_71_W_B_DiagnApp" uuid="b01fabcb-7fef-4ced-a011-bad4a46f9557">
           <opc:opcua-link-map name="OpcUaAddressMap" uuid="f37c8ae0-3a96-4374-b45a-1fb4f7c507e8" file="REGUL_R500_71_W_B_DiagnMap.xml" />
+          <ct:object name="REGUL_R500_B" uuid="edf08ce1-647c-4683-beed-ef9b487b32f1">
+            <ct:object name="CRATE01" uuid="c0ff6258-f24c-4d69-9dc1-e0492800dbd0">
+              <ct:object name="ST_01_012" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.ST.ST_01_012.PLC_View" uuid="bb861299-effa-4c76-9cfb-49d6e1e5f7a7" />
+              <ct:object name="PP_00_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.PP.PP_00_011.PLC_View" uuid="09ef2258-138f-4b0e-a662-95a7229d4115" />
+              <ct:object name="AI_08_041" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.AI.AI_08_041.PLC_View" uuid="834802be-2b8a-49c6-a37a-66c7ebec4fa8" />
+              <ct:object name="DI_32_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.DI.DI_32_011.PLC_View" uuid="c3fb7c3e-9bda-4cf6-b1bb-cd8ae5a474da" />
+              <ct:object name="AO_08_031" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.AO.AO_08_031.PLC_View" uuid="5a8b14f2-e5fe-444d-b4d1-e93ce5bf1b33" />
+              <ct:object name="DO_32_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.DO.DO_32_011.PLC_View" uuid="139a8552-97a9-4ea7-a1d9-14635df72dcf" />
+              <ct:object name="DA_03_011" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.DA.DA_03_011_ENC.PLC_View" uuid="4555e1dc-ed2c-4140-90e7-bee832bae461" />
+              <ct:object name="ST_01_022" aspect="PsBase.Aspects.PLC_Aspect" base-type="PsDiagn.REGUL.R500.MODULES.ST.ST_01_022.PLC_View" uuid="285d78fa-eb26-4ed6-944c-d65684bd923b" />
+            </ct:object>
+            <ct:object name="CU_00_071" base-type="PsDiagn.REGUL.R500.MODULES.CU.CU_XX_XXX.PLC_View" uuid="28650028-0bc8-4c7e-af68-164bf4af6af7" aspect="PsBase.Aspects.PLC_Aspect">
+              <attribute type="unit.System.Attributes.Title" value="CU_00_061" />
+              <attribute type="unit.System.Attributes.Description" value="REGUL_R500_B" />
+              <attribute type="unit.PsBase.Attributes.ALIAS" value="REGUL_R500_B" />
+              <attribute type="unit.PsDiagn.Attributes.KKS" value="REGUL_R500_B" />
+            </ct:object>
+          </ct:object>
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="6d2a9414-be26-44f5-9c3a-cd7e40fb7cc8" tag-map="REGUL_R500_71_W_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
       </dp:external-runtime>
       <eth:ethernet-adapter name="EthernetAdapter1" uuid="8adfe462-fc3d-4583-8373-8317ccee70d6" network="Network1" address="192.168.100.11" />
       <eth:ethernet-adapter name="EthernetAdapter2" uuid="7f4b2042-6bfc-48dc-9d45-97e95dfcbaac" network="Network2" address="192.168.101.11" />
     </dp:computer>
-    <eth:ethernet-net name="LocalNetwork">
+    <eth:ethernet-net name="LocalNetwork" uuid="fbbbbc81-6a1a-43a8-ac47-72d99cbfa5fb">
       <attribute type="unit.System.Attributes.Comment" value="Local network" />
     </eth:ethernet-net>
-    <eth:ethernet-net name="Network1">
+    <eth:ethernet-net name="Network1" uuid="cb9d75e2-f81a-4c2a-97f7-16e139260dd9">
       <attribute type="unit.System.Attributes.Comment" value="External network 1" />
     </eth:ethernet-net>
-    <eth:ethernet-net name="Network2">
+    <eth:ethernet-net name="Network2" uuid="79731ee6-a842-45a2-9d5a-0a049ddcf2a6">
       <attribute type="unit.System.Attributes.Comment" value="External network 2" />
     </eth:ethernet-net>
     <dp:computer name="Commutator1" uuid="45686d34-8cea-4cb0-a086-857a1de6b639">
@@ -152,9 +452,15 @@
         </srv:snmp-manager>
         <dp:host module="IOS_App" />
         <srv:opcua-client name="OpcUaClient" uuid="f8b419ec-a2f0-411e-bc65-024903363c95" application-mame="ProSystOpcUaClient" logging-required="false">
-          <srv:opcua-server-link server="REGUL_R500_71_W_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
-          <srv:opcua-server-link server="REGUL_R500_71_W_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
-          <srv:opcua-server-link server="REGUL_R500_71_W_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections">
+            <property name="password">almH6PvKgdnklVpnMeq+KP2gdKJZR/E2Sz+x9nyGWAhmj8mUtwatYbUZPbVX1dlSfHk5eDfLytPnl/YRMZPTmo4f91SbpWVaLj5qthzsRB3EQ+mVz0gI/4etV5UxdMkmJ/l+PTH6ilisEMLW+2Ur7PLjzofo5PtjDJnKog3TrAE</property>
+          </srv:opcua-server-link>
+          <srv:opcua-server-link server="REGUL_R500_71_W_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections">
+            <property name="password">Ii9EI4meFfYAB9KJtikN3GNPVrPdcTFYca32lvOcvuHhZEROPT5UnhoozV133nhD4Ke9nCz/Hjoy1Yv+1ZfvFihP/XQezT4qQ8ViQ95qVsY/7PhhjQLVA2VL028lw5xux4iaQimJs62iPWldiA78d9ko8MkRELHOsdQyy03lbdY</property>
+          </srv:opcua-server-link>
+          <srv:opcua-server-link server="REGUL_R500_71_W_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections">
+            <property name="password">kXJSHsRCWRzB0ctMIH/WwDQQMeKDhBDzKET0cMr4C/dWkTGVd8eznU/hO2IFCXUpJco+EbRpi2Vic2ZdEJcrujMKFBYlYdlyDmMe/S/novu3LeR3Qgm30TElnGMvddWHWdoe2RM80Ubwh5PZD6nETj5mBmrIY6rZyCPa9appbmc</property>
+          </srv:opcua-server-link>
         </srv:opcua-client>
         <srv:history-module name="HistoryModule" uuid="f1f72197-3555-4f3c-9206-66edb9d0d926">
           <srv:historian-database-link database="AstraRegul.Server1.Historian.DB_HISTORY" queue-path="/opt/AstraRegul/Astra.Historian/Queues" />
@@ -226,4 +532,7 @@
       <eth:ethernet-adapter name="EthernetAdapter2" uuid="9f264136-8238-4779-80fb-856a3bf22e2d" network="Network2" address="192.168.101.110" />
     </dp:computer>
   </dp:domain>
+  <link-unit name="PsBase" uuid="e570d3cd-a4b2-4d1b-a24d-e52a551b8411" target="PsBase" />
+  <link-unit name="PsDiagn" uuid="ec0188e3-b40d-4954-b152-22989eb4b02a" target="PsDiagn" />
+  <link-unit name="PsTechEE" uuid="ba6fc4e2-d0cf-4a72-a3fb-880b25d54882" target="PsTechEE" />
 </omx>
