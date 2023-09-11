@@ -1,1 +1,488 @@
-﻿<root />
+<root format-version="0">
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.ST_01_012.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_xx_x1x.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.ST_01_012.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_xx_x1x.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.PP_00_011.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_xxx.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.PP_00_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_xxx.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AI_08_041.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_041.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DI_32_011.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DI_32_011.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DI_32_011.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DI_32_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH01</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH01</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH02</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH02</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH03</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH03</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH04</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH04</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH05</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH05</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH06</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH06</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH07</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH07</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.CH08</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.CH08</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.AO_08_031.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_031.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DO_32_011.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_011.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DO_32_011.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_011.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DO_32_011.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_011.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DO_32_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_011.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.RST</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.RST</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.COUNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.COUNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.RPM_COUNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.RPM_COUNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.IN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.IN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.DA_03_011.OUT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DA_03_011.OUT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.ST_01_022.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_xx_x2x.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CRATE01.ST_01_022.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_xx_x2x.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.CPU_CNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.CPU_CNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.CPU1_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.CPU1_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.CPU2_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.CPU2_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.CPU3_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.CPU3_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.CPU4_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.CPU4_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.NET_CNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.NET_CNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.PORT1_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.PORT1_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.PORT2_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.PORT2_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.PORT3_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.PORT3_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.PORT4_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.PORT4_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.PORT5_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.PORT5_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.PORT6_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.PORT6_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.IS_CPU_A</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.IS_CPU_A</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.IS_CPU_B</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.IS_CPU_B</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.RED_MODE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.RED_MODE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.IS_ACTIVE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.IS_ACTIVE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.ERRORS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.ERRORS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.TEMP_MAX</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.TEMP_MAX</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.TEMP_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.TEMP_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.TEMP_CUR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.TEMP_CUR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.YEAR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.YEAR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.MONTH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.MONTH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.DAY</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.DAY</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.HOUR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.HOUR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.MINUTE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.MINUTE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.SECOND</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.SECOND</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500_A.CU_00_071.MILLISECOND</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_xxx.MILLISECOND</nodeId>
+  </item>
+</root>

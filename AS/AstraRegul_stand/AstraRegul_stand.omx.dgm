@@ -32,7 +32,7 @@
   </computer>
   <external-runtime Id="84eeb3b0-8875-4438-8474-70822b8444be" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <application-object Id="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3" Left="785.123333333333" Top="26" Width="179.876666666667" Height="54" />
-    <opcua-server Id="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" Left="1060.39" Top="26" Width="171.61" Height="58.59" />
+    <opcua-server Id="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" Left="1037.39" Top="26" Width="171.61" Height="58.59" />
   </external-runtime>
   <application-object Id="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <opcua-link-map Id="5bb4ac8c-d667-41f7-8dad-0d9ef74442eb" Left="66" Top="26" Width="231.326666666667" Height="61.63" />
@@ -72,7 +72,7 @@
   </object>
   <external-runtime Id="48a42c65-8380-420f-8564-7aa82f1da2b9" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <application-object Id="0a990b55-5f75-4e1f-b57d-e2adeea97762" Left="698.37" Top="26" Width="223.88" Height="54" />
-    <opcua-server Id="fd158e2c-6dc8-4201-9faf-e558a526ec32" Left="1037.39" Top="26" Width="171.61" Height="58.59" />
+    <opcua-server Id="fd158e2c-6dc8-4201-9faf-e558a526ec32" Left="1041.39" Top="26" Width="171.61" Height="58.59" />
   </external-runtime>
   <application-object Id="0a990b55-5f75-4e1f-b57d-e2adeea97762" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <opcua-link-map Id="ee821b52-7152-43c0-a3b8-868626af0366" Left="66" Top="26" Width="275.33" Height="61.63" />
