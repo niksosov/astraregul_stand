@@ -167,12 +167,12 @@
   <io-server Id="8a9b21fe-0d4c-4db8-98e9-341b5db1ed68" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <opcda-server Id="8f98224f-9de8-49bc-a069-2768aae037b0" Left="1350.06" Top="26" Width="116.906666666667" Height="36.63" />
     <tcp-server Id="c6c9ae52-43e0-445c-80cf-4ff80aed95bd" Left="1354.23333333333" Top="102.63" Width="112.733333333333" Height="36.63" />
-    <opcaeserver-module Id="5a5e00c4-c70d-4716-b2bb-f8e465fda602" Left="1351.94" Top="179.26" Width="115.026666666667" Height="36.63" />
     <opcua-module Id="f75b30e6-dfe8-4f69-94a3-1e61aa0d134a" Left="1350.21333333333" Top="255.89" Width="116.753333333333" Height="36.63" />
     <hda-server Id="2296bce6-698b-43d4-9375-6710102f04f1" Left="1342.25" Top="332.52" Width="124.716666666667" Height="36.63" />
     <snmp-manager Id="8c00789d-e2c8-411f-9b59-1037357a0118" Left="24" Top="26" Width="247.376666666667" Height="178.63" />
     <opcua-client Id="b02335b4-17bd-4da0-b730-7ea2765b33c8" Left="24" Top="244.63" Width="322" Height="126.63" />
     <history-module Id="5bae6e49-084a-405f-b504-6ed522bdd040" Left="388" Top="428.528962638855" Width="298.383333333333" Height="126.63" />
+    <opcaeserver-module Id="5a5e00c4-c70d-4716-b2bb-f8e465fda602" Left="1351.94" Top="179.26" Width="115.026666666667" Height="36.63" />
     <host Id="dp:host[6]" Left="1192.81" Top="26" Width="107.44" Height="24" />
   </io-server>
   <computer Id="2057bee5-ed1d-4e68-9f73-240999282083" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">

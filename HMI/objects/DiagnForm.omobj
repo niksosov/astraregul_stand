@@ -81,7 +81,7 @@
 			<designed target="Y" value="-330" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<init target="init_Source" ver="5" ref="unit.Connections.AP_SOURCE_MAIN"/>
-			<init target="init_Path" ver="5" value="ASTRAREGUL_DEMOSTAND.DIAGNOSTICS.REGUL_R500_A.CU_00_061"/>
+			<init target="init_Path" ver="5" value="ASTRAREGUL_DEMOSTAND.DIAGNOSTICS.REGUL_R500_A.CU_00_071"/>
 			<designed target="Scale" value="0.32500000000000001" ver="5"/>
 		</object>
 		<object access-modifier="private" name="R500_AI_08_041_1" display-name="R500_AI_08_041_1" uuid="cb6b8d91-4909-43b2-a235-42078ef3b3a4" base-type="R500_AI_08_041" base-type-id="e194a279-9a1d-4fef-8241-5573987062a7" ver="5" description="" cardinal="1">
