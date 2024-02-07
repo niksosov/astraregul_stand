@@ -5,6 +5,7 @@
 !AstraRegul_stand.project
 !*.MD
 !.gitignore
+!AstraRegul_stand.xml
 
 # кроме папки
 !SETTINGS/
