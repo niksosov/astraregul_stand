@@ -32,7 +32,7 @@
   </computer>
   <external-runtime Id="84eeb3b0-8875-4438-8474-70822b8444be" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <application-object Id="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3" Left="785.123333333333" Top="26" Width="179.876666666667" Height="54" />
-    <opcua-server Id="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" Left="1037.39" Top="26" Width="171.61" Height="58.59" />
+    <opcua-server Id="6d99fe7e-8b74-47a5-922b-10fdb9a10e7a" Left="1094.39" Top="26" Width="171.61" Height="58.59" />
   </external-runtime>
   <application-object Id="614f2a4f-d9f9-4c1b-80f6-ab511c8187a3" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <opcua-link-map Id="5bb4ac8c-d667-41f7-8dad-0d9ef74442eb" Left="66" Top="26" Width="231.326666666667" Height="61.63" />
@@ -54,9 +54,53 @@
       <Inputs />
       <Outputs />
     </object>
+    <object Id="6bc78966-f823-45d7-82e8-c3887f9d554a" Left="95" Top="46" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="62ef4a8d-5861-4528-8a3f-45f4ffbb2aea" Left="115" Top="66" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="58bc99af-364e-43d0-be49-fa47b713180e" Left="135" Top="86" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="5cf5dfc1-a41c-4751-bece-3b8d8af19e3a" Left="155" Top="106" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="e8c29e72-a44c-45ac-a4a0-e3a98a27716e" Left="175" Top="126" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="c68545fb-48de-4518-8d4e-657252d67482" Left="195" Top="146" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="928a05d6-2e09-44c2-9860-e87513ea5054" Left="215" Top="166" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="2d95520d-f5ea-4ec7-8171-35b88fb0481f" Left="235" Top="186" Width="233" Height="219">
+      <Inputs />
+      <Outputs />
+    </object>
   </object>
   <object Id="4c6663fc-5919-4d08-913c-9716ab110840" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <object Id="1d48a8b4-7f9c-44a5-9286-3ae307f6f8a7" Left="66" Top="26" Width="250.453333333333" Height="280">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="b509e175-8673-4537-ad7e-d8bb4e8e5359" Left="86" Top="46" Width="250.453333333333" Height="280">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="2235f180-16a9-4675-983d-265d7407f0e4" Left="106" Top="66" Width="250.453333333333" Height="280">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="a73c9fdf-6cb6-4641-9b5e-5166da824008" Left="126" Top="86" Width="250.453333333333" Height="280">
       <Inputs />
       <Outputs />
     </object>
@@ -66,9 +110,22 @@
       <Inputs />
       <Outputs />
     </object>
+    <object Id="0e18ed43-ce0e-4e44-b3bc-f9103199d620" Left="86" Top="46" Width="244.893333333333" Height="255">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="c76dfa57-23e3-407c-95c9-73dc681bb299" Left="106" Top="66" Width="244.893333333333" Height="255">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="0595d269-cd55-483a-ac72-a9eea012abb9" Left="126" Top="86" Width="244.893333333333" Height="255">
+      <Inputs />
+      <Outputs />
+    </object>
   </object>
   <object Id="af90dcad-6dfc-4362-bd92-952160427246" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <object Id="fea7a4b4-ef8d-46fb-9e11-c1324a61b67b" Left="75" Top="26" Width="235" Height="244" />
+    <object Id="57df678a-c44f-4c14-8eb3-08f79e8be084" Left="95" Top="46" Width="235" Height="244" />
   </object>
   <external-runtime Id="48a42c65-8380-420f-8564-7aa82f1da2b9" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <application-object Id="0a990b55-5f75-4e1f-b57d-e2adeea97762" Left="698.37" Top="26" Width="223.88" Height="54" />
@@ -164,15 +221,15 @@
     <ethernet-adapter Id="96c95f52-05d8-41f7-a198-11d4212e7828" Left="1088.53666666667" Top="363.150687599182" Width="144.463333333333" Height="45.63" />
     <ethernet-adapter Id="dc804327-e1e4-4ce2-afe2-98becfef1d26" Left="1088.53666666667" Top="428.780687599182" Width="144.463333333333" Height="45.63" />
   </domain-node>
-  <io-server Id="8a9b21fe-0d4c-4db8-98e9-341b5db1ed68" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+  <io-server Id="8a9b21fe-0d4c-4db8-98e9-341b5db1ed68" OffsetX="196.966666666667" OffsetY="0" Scale="1" SnapToGrid="false">
     <opcda-server Id="8f98224f-9de8-49bc-a069-2768aae037b0" Left="1350.06" Top="26" Width="116.906666666667" Height="36.63" />
     <tcp-server Id="c6c9ae52-43e0-445c-80cf-4ff80aed95bd" Left="1354.23333333333" Top="102.63" Width="112.733333333333" Height="36.63" />
+    <opcaeserver-module Id="5a5e00c4-c70d-4716-b2bb-f8e465fda602" Left="1351.94" Top="179.26" Width="115.026666666667" Height="36.63" />
     <opcua-module Id="f75b30e6-dfe8-4f69-94a3-1e61aa0d134a" Left="1350.21333333333" Top="255.89" Width="116.753333333333" Height="36.63" />
     <hda-server Id="2296bce6-698b-43d4-9375-6710102f04f1" Left="1342.25" Top="332.52" Width="124.716666666667" Height="36.63" />
     <snmp-manager Id="8c00789d-e2c8-411f-9b59-1037357a0118" Left="24" Top="26" Width="247.376666666667" Height="178.63" />
     <opcua-client Id="b02335b4-17bd-4da0-b730-7ea2765b33c8" Left="24" Top="244.63" Width="322" Height="126.63" />
     <history-module Id="5bae6e49-084a-405f-b504-6ed522bdd040" Left="388" Top="428.528962638855" Width="298.383333333333" Height="126.63" />
-    <opcaeserver-module Id="5a5e00c4-c70d-4716-b2bb-f8e465fda602" Left="1351.94" Top="179.26" Width="115.026666666667" Height="36.63" />
     <host Id="dp:host[6]" Left="1192.81" Top="26" Width="107.44" Height="24" />
   </io-server>
   <computer Id="2057bee5-ed1d-4e68-9f73-240999282083" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
@@ -237,6 +294,88 @@
   <object Id="2bf62659-c836-4ab9-b17a-fac761b300e6" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <object Id="a8d27917-897c-4c41-b218-da96ef848b61" Left="66" Top="26" Width="542.94" Height="222.63" />
     <object Id="a63471f7-789f-4000-a367-b5ddb736591e" Left="628.94" Top="26" Width="553.206666666667" Height="653.26">
+      <Outputs />
+    </object>
+  </object>
+  <object Id="f1c20608-9e86-491d-8bab-9c56a848b392" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="1eaaf127-4028-4df9-b58e-eecc66164f04" Left="685.46" Top="26" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="b40b5d90-960a-4c51-8ca9-5d85ad090f4a" Left="685.46" Top="316" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="3f746fe1-b0f6-4d14-84a5-fb9e11a4ec48" Left="66" Top="326" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="3df43778-b1e1-4218-9a4b-8cd945689e20" Left="629.46" Top="606" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="fe71287a-fae8-42f1-891f-d2ce68a920d2" Left="66" Top="616" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="0771aac0-0e32-4305-afb7-ef697d2fd76c" Left="629.46" Top="896" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="2f4791a1-fab6-4277-9e24-d801b7ebfdc7" Left="66" Top="906" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="77c97f5f-6137-49bf-bd0f-0909c6067c8a" Left="629.46" Top="1186" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="e56e6ae9-9528-4347-aa1e-5de8d918205b" Left="122" Top="32" Width="543.46" Height="279.26">
+      <Inputs />
+      <Outputs />
+    </object>
+  </object>
+  <object Id="06aad573-4ac8-4078-858b-334cbb49b7da" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="e9915ee7-1c44-45bc-b04c-125ee915fa53" Left="66" Top="32" Width="545.496666666667" Height="387.26">
+      <Outputs />
+    </object>
+    <object Id="c6d8bfce-4fb1-4e3b-a5f9-35d018c75e4a" Left="631.496666666667" Top="26" Width="555.993333333333" Height="387.26">
+      <Outputs />
+    </object>
+  </object>
+  <object Id="ec61bdae-1925-4768-852f-ece5939e69d9" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="ad5867af-4b8d-4403-b15d-d8bb98c01805" Left="66" Top="26" Width="582.566666666667" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="89792874-a94e-4c7d-ad44-3c704d8febed" Left="668.566666666667" Top="26" Width="582.566666666667" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="0c3c679f-b177-47b2-93a2-443f4c8c4fc8" Left="66" Top="406" Width="582.566666666667" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="9cbdba8f-6025-40ae-b395-a06f335a01bb" Left="668.566666666667" Top="406" Width="582.566666666667" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+  </object>
+  <object Id="c90ab4fc-86c0-4d74-b8ba-7392a6bfea43" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="58adad72-8207-4d46-a30e-3fade8289e42" Left="66" Top="26" Width="572.513333333333" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="633467ca-9646-45c6-9f67-f385d0bfb8d9" Left="658.513333333333" Top="26" Width="572.513333333333" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="544d63e7-c8a3-4060-8270-34e804c52253" Left="66" Top="406" Width="572.513333333333" Height="365.26">
+      <Inputs />
+      <Outputs />
+    </object>
+    <object Id="27842741-81b0-4b6d-9ec3-109fac399fb2" Left="658.513333333333" Top="406" Width="572.513333333333" Height="365.26">
+      <Inputs />
       <Outputs />
     </object>
   </object>
