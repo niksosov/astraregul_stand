@@ -93,31 +93,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_1.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_1.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_1.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_1.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_1.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_1.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_1.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_1.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_1.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_1.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_1.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_1.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_2.CONFIG.YMIN</node-path>
@@ -213,31 +201,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_2.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_2.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_2.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_2.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_2.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_2.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_2.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_2.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_2.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_2.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_2.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_2.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_3.CONFIG.YMIN</node-path>
@@ -333,31 +309,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_3.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_3.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_3.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_3.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_3.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_3.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_3.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_3.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_3.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_3.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_3.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_3.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_4.CONFIG.YMIN</node-path>
@@ -453,31 +417,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_4.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_4.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_4.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_4.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_4.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_4.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_4.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_4.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_4.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_4.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_4.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_4.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_5.CONFIG.YMIN</node-path>
@@ -573,31 +525,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_5.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_5.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_5.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_5.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_5.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_5.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_5.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_5.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_5.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_5.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_5.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_5.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_6.CONFIG.YMIN</node-path>
@@ -693,31 +633,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_6.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_6.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_6.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_6.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_6.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_6.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_6.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_6.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_6.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_6.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_6.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_6.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_7.CONFIG.YMIN</node-path>
@@ -813,31 +741,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_7.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_7.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_7.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_7.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_7.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_7.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_7.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_7.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_7.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_7.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_7.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_7.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_8.CONFIG.YMIN</node-path>
@@ -933,31 +849,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_8.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_8.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_8.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_8.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_8.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_8.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_8.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_8.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_8.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_8.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_8.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_8.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_9.CONFIG.YMIN</node-path>
@@ -1053,31 +957,19 @@
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_9.FACT_VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_9.OUT.FACT_VALUE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_9.FACT_VALUE</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_9.SIGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_9.OUT.SIGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_9.MODE</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_9.OUT.MODE</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_9.SIGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_9.DIAGN</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.MAIN.FB_AI1_9.OUT.DIAGN</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>REGUL_R500.SYSTEM1.AI1.FB_AI1_9.SIGN_OFF</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.Ai1SignOff</nodeId>
+    <nodeId>Application.MAIN.FB_AI1_9.DIAGN</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_1.CONFIG.RUNTIME</node-path>
@@ -1158,6 +1050,12 @@
     <nodeId>Application.MAIN.FB_VLV_C2.TIMEOUT</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_1.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_C2.MODEL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_2.CONFIG.RUNTIME</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1234,6 +1132,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.MAIN.FB_VLV_C2.TIMEOUT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_2.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_C2.MODEL</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_3.CONFIG.RUNTIME</node-path>
@@ -1314,6 +1218,12 @@
     <nodeId>Application.MAIN.FB_VLV_C2.TIMEOUT</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_3.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_C2.MODEL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_4.CONFIG.RUNTIME</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1392,6 +1302,12 @@
     <nodeId>Application.MAIN.FB_VLV_C2.TIMEOUT</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_C2.FB_VLV_C2_4.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_C2.MODEL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_1.CONFIG.OPN_TIME</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1462,6 +1378,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.MAIN.FB_VLV_D.TIMEOUT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_1.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_D.MODEL</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_2.CONFIG.OPN_TIME</node-path>
@@ -1536,6 +1458,12 @@
     <nodeId>Application.MAIN.FB_VLV_D.TIMEOUT</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_2.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_D.MODEL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_3.CONFIG.OPN_TIME</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1608,6 +1536,12 @@
     <nodeId>Application.MAIN.FB_VLV_D.TIMEOUT</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_3.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_D.MODEL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_4.CONFIG.OPN_TIME</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1678,5 +1612,11 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.MAIN.FB_VLV_D.TIMEOUT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_R500.SYSTEM1.VLV_D.FB_VLV_D_4.MODEL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.MAIN.FB_VLV_D.MODEL</nodeId>
   </item>
 </root>
